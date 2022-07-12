@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* gradiente */
+
+.caja{
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to left, red, yellow);
+    
+    transition: 1s;
+}
+
+.caja:hover{
+    width: 300px;
+    transform: scale(1.5);
+    border: 2px;
+    border-radius: 10px;
+}
+
+/*ejemplo animacion */
+
+.sol{
+    width: 50%;
+    animation-name: latir;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes latir{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(2);
+    }
+}
